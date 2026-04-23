@@ -1,0 +1,9 @@
+class RoomSensor:
+    """
+    Simulates a room sensor with temperature, humidity, and light.
+    """
+    def __init__(self, name: str, temperature: float, humidity: float, light: float) -> None:
+        self.name        = name
+        self.temperature = temperature
+        self.humidity    = humidity
+        self.light       = light
