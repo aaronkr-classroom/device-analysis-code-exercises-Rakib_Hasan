@@ -1,0 +1,26 @@
+Method 1 - show_info()
+    def show_info(self) -> None:
+        # Print all sensor values in a readable format
+        print(f"Sensor: {self.name}")
+        print(f"Temperature: {self.temperature}")
+        print(f"Humidity: {self.humidity}")
+        print(f"Light: {self.light}")
+ 
+    # Method 2 - comfort_level()
+    def comfort_level(self) -> str:
+        # Check temperature and humidity conditions
+        if 20 <= self.temperature <= 26 and 40 <= self.humidity <= 60:
+            return "Comfortable"
+        elif self.temperature >= 30 or self.humidity >= 70:
+            return "Warning"
+        else:
+            return "Normal"
+ 
+    # Method 3 - light_status()
+    def light_status(self) -> str:
+        # Check light level
+        if self.light < 200:
+            return "Dark"
+        else:
+            return "Bright"
+ 
