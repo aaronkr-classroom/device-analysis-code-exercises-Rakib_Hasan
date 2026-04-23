@@ -1,0 +1,11 @@
+from RoomSensor import RoomSensor
+ 
+
+# Part 3: Create and Store Multiple Objects
+
+sensors = [
+    RoomSensor("Kitchen",     temperature=31, humidity=72, light=180),
+    RoomSensor("Bedroom",     temperature=23, humidity=50, light=300),
+    RoomSensor("Balcony",     temperature=17, humidity=35, light=500),
+    RoomSensor("Living Room", temperature=25, humidity=55, light=420),
+    RoomSensor("Bathroom",    temperature=29, humidity=68, light=150),
