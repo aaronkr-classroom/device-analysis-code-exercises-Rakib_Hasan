@@ -1,0 +1,4 @@
+print("--- Comfort Summary ---")
+print(f"Comfortable: {comfortable}")
+print(f"Normal: {normal}")
+print(f"Warning: {warning}")
