@@ -1,0 +1,14 @@
+for sensor in sensors:
+    sensor.show_info()
+    print(f"Comfort Level: {sensor.comfort_level()}")
+    print(f"Light Status: {sensor.light_status()}")
+    print() # blank line between sensors
+ 
+    # Count each comfort category
+    level = sensor.comfort_level()
+    if level == "Comfortable":
+        comfortable += 1
+    elif level == "Warning":
+        warning += 1
+    else:
+        normal += 1
